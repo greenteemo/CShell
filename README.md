@@ -1,3 +1,15 @@
+
+CShell
+======
+Fork from brenns10's lsh
+Add one builtin function of **"pwd"** by getcwd()
+
+Why I call it CSehll
+--------------------
+Because it written by C :p
+
+
+below is brenns10 lsh's REAMDE
 LSH
 ===
 
