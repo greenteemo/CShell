@@ -120,9 +120,15 @@ int execute(char **args){
 		}
 	}
 
-	printf("CShell: Not exist command \"%s\"\n", args[0]);
+	/*
+	 * This part is not use execvp to execute system commands
+	 * only builtin function will be executed
+     */
+	// printf("CShell: Not exist command \"%s\"\n", args[0]);
+	// return 1;
 
-	return 1;
+	// This part will use execvp to execute system commands
+	return launch(args);
 }
 
 char **split_line(char *line){
